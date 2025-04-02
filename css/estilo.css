@@ -1,0 +1,99 @@
+/* regra css */
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*  */
+    scrollbar-width: thin;/*  */
+    scrollbar-color:red;/*  */
+}
+
+
+
+
+
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+    
+    
+}
+
+
+
+
+html[data-theme='dark'] .logo {
+    filter: invert(1);
+}
+ 
+#header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% ;
+    padding: 10px 20px ;
+
+
+}
+
+
+
+
+.logo{
+width:56px ;/* largura */
+height:auto;/* altura */
+
+
+}   
+
+
+.header-toggle{
+     display:flex ;
+     justify-content:flex-end ;
+
+
+}
+
+#toggletheme{
+    color: whitesmoke;/* cor texto */
+    font-size: 33px; /* tamanho da fonte: 16 pra 45 */
+    cursor: pointer ;
+    transition: all 0.6 ease-in-out ;
+
+
+}
+
+/*menu desktop*/
+
+.menu{
+    display:flex ;
+    align-items: center ;
+    gap:25px ;
+
+
+}
+
+
+.menu-item{
+     width:100%;
+
+}
+
+
+.menu-link{
+     display:flex ;
+     text-transform: uppercase;
+     color: darkblue;
+
+}
