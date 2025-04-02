@@ -1,3 +1,32 @@
+/*google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*saira
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+*/
+
+/*georama
+  font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+  */
+
+/*sitx-two
+   font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+*/
+
+  
+
 /* regra css */
 /* reset CSS */
 * {
@@ -51,9 +80,8 @@ html[data-theme='dark'] .logo {
 
 
 .logo{
-width:56px ;/* largura */
+width: 150px ;/* largura */
 height:auto;/* altura */
-
 
 }   
 
@@ -61,7 +89,7 @@ height:auto;/* altura */
 .header-toggle{
      display:flex ;
      justify-content:flex-end ;
-
+     min-width:30% ;
 
 }
 
@@ -94,6 +122,12 @@ height:auto;/* altura */
 .menu-link{
      display:flex ;
      text-transform: uppercase;
-     color: darkblue;
+
+}
+
+.menu-texto{
+     font-size: 12px;
+     text-transform: uppercase;
+     font-family:uppercase ;
 
 }
