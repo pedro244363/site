@@ -131,3 +131,31 @@ height:auto;/* altura */
      font-family:uppercase ;
 
 }
+
+.header-nav{
+    display: none;
+}
+
+.menu-mobile    .menu-link{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        padding:8px 16px ;
+}
+/* CSS responsivo */
+/* telas apatir de 768 */
+
+@media (min-width: 768px){
+      .header-nav{
+          display:flex;
+
+    }
+      .header-nav,
+      .header-toggle{
+        min-width: 30%;
+
+      }
+      
+
+    }
+
