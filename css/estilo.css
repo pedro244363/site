@@ -44,6 +44,7 @@
 
 body {
     background-color: brown;
+    color: whitesmoke;
 }
 
 a{
@@ -165,6 +166,9 @@ height:auto;/* altura */
     font-weight: 400;
 }
 
+.icone-link{
+    font-size: 25px;
+}
 
 
 
