@@ -65,7 +65,29 @@ ul{
 html[data-theme='dark'] .logo {
     filter: invert(1);
 }
- 
+
+h1{
+    font-size: 40px;
+    font-weight:100px ;
+    font-family:Georama ;
+    letter-spacing: 3px ;
+}
+p , li , span {
+    font-size: 18px;
+}
+
+p{
+    text-align: justify;
+    font-family: "inter",
+    sans-serif;
+}
+
+strong{
+    font-weight: 800;
+    color: white;
+}
+ /*HEADER*/
+
 #header{
     display: flex;
     flex-flow: row wrap;
@@ -170,8 +192,51 @@ height:auto;/* altura */
     font-size: 25px;
 }
 
+/* fim do CSS*/
 
+/* Home / main */
 
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px 2px 30px;
+    cursor: pointer ;
+}
+
+.btn-primary{
+    border: 8px solid white;
+}
+
+.btn span,
+.btn i {
+    color: white;
+    font-size: 20px;
+}
 
 /* CSS responsivo */
 /* telas apatir de 768 */
