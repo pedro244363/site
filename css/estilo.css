@@ -1,6 +1,18 @@
 /*google fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+/* variantes de cores */
+/* definir core tema DARK */
+:root,
+:root [data-theme= "dark"] {
 
+    --fundo-header: brown;
+
+}
+
+/*  definir cores tema LIGHT */
+:root[data-theme="light"] {
+    --fundo-header: rgb(105, 105, 105) ;
+}
 
 /*saira
     font-family: "Saira", sans-serif;
@@ -115,7 +127,7 @@ height:auto;/* altura */
 
 }
 
-#toggletheme{
+#toggleTheme{
     color: whitesmoke;/* cor texto */
     font-size: 33px; /* tamanho da fonte: 16 pra 45 */
     cursor: pointer ;
@@ -173,6 +185,7 @@ height:auto;/* altura */
     justify-content: space-between;
     border-top: 1px solid #989898;
     z-index: 1;/*  */
+    background-color: white ;
 }
 
 .menu-link.active .icone-link, 
@@ -237,11 +250,42 @@ height:auto;/* altura */
     color: white;
     font-size: 20px;
 }
+.btn:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out .4s;
+}
+
+.btn:hover span ,
+.btn:hover i {
+    color: red
+}
+
+.icon-social {
+    font-size: 35px;
+    color: black;
+}
+ 
+
+/* Estrutura*/
+
+/* ATUALIZAÇOES FUTURAS*/
+#home{
+    padding: 40px 16px;
+}
+
+
+
+
 
 /* CSS responsivo */
-/* telas apatir de 768 */
+/* telas apartir de 768 */
 
 @media (min-width: 768px){
+      #header {
+        background-color: var(--fundo-header);
+        position: fixed;
+        border-bottom: 2px solid white;
+      }
       .header-nav{
           display:flex;
 
@@ -255,5 +299,21 @@ height:auto;/* altura */
        .nav-mobile{
         display: none;
        }
-    }
+       #home{ /* ATUALIZAÇÃO FUTURA */
+        padding: 128px 96px 64px 96px ;
+       }
 
+       .main-content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+}
+/* 1200px */
+
+@media (min-width: 1200px) {
+    #home {
+        padding: 160px 96px 32px ;
+   }
+}
