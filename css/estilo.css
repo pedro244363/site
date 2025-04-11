@@ -4,14 +4,21 @@
 /* definir core tema DARK */
 :root,
 :root [data-theme= "dark"] {
-
-    --fundo-header: brown;
+    --bg:burlywood ;/*cor fundo*/
+    --color:brown ;/* cor texto*/
+    --hover: white;
+    --cor-titulo: white;
+    --sombra: brown ;
 
 }
 
 /*  definir cores tema LIGHT */
 :root[data-theme="light"] {
-    --fundo-header: rgb(105, 105, 105) ;
+    --bg: brown ;/*cor fundo*/
+    --color: burlywood ;/* cor texto*/
+    --hover: black;
+    --cor-titulo: black;
+    --sombra: burlywood ;
 }
 
 /*saira
@@ -46,7 +53,6 @@
     padding: 0;
     box-sizing: border-box; /*  */
     scrollbar-width: thin;/*  */
-    scrollbar-color: red;/*  */
 }
 
 
@@ -55,7 +61,7 @@
 
 
 body {
-    background-color: brown;
+    background-color: var(--bg);
     color: whitesmoke;
 }
 
@@ -78,11 +84,31 @@ html[data-theme='dark'] .logo {
     filter: invert(1);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     font-size: 40px;
     font-weight:100px ;
     font-family:Georama ;
     letter-spacing: 3px ;
+}
+
+h2{
+    font-family: "Georama", serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3{
+    font-family: "Georama", serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 300px ;
+    text-align: center;
+    text-transform: uppercase;
 }
 p , li , span {
     font-size: 18px;
@@ -96,7 +122,7 @@ p{
 
 strong{
     font-weight: 800;
-    color: white;
+    color: var(--cor-titulo);
 }
  /*HEADER*/
 
@@ -113,6 +139,7 @@ strong{
 
 
 
+/* logo */
 
 .logo{
 width: 200px ;/* largura */
@@ -197,7 +224,7 @@ height:auto;/* altura */
 
 .menu-icone,
 .menu-texto{
-    color: burlywood;
+    color: rgb(0, 0, 0);
     font-weight: 400;
 }
 
@@ -245,6 +272,11 @@ height:auto;/* altura */
     border: 8px solid white;
 }
 
+.btn-primary:hover {
+    border: 1px solid var(--bg);
+}
+
+
 .btn span,
 .btn i {
     color: white;
@@ -255,18 +287,70 @@ height:auto;/* altura */
     transition: all ease-in-out .4s;
 }
 
-.btn:hover span ,
+.btn:hover span,
 .btn:hover i {
-    color: red
+    color: var(--hover);
 }
 
 .icon-social {
     font-size: 35px;
     color: black;
 }
- 
+
+.icon-social:hover{
+    color: burlywood;
+}
 
 /* Estrutura*/
+/*Projetos*/
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.projetos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.projetos-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img{
+    width: 100%;
+    pointer-events: none;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 10px 70px burlywood;
+}
+
+.card-description {
+    font-family: "Georama", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+
+}
+
+.icon-list {
+    color: red;
+    font-size: 14px;
+}
+
+.card-item{
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Georama", sans-serif;
+}
+
 
 /* ATUALIZAÇOES FUTURAS*/
 #home{
@@ -280,16 +364,18 @@ height:auto;/* altura */
 /* CSS responsivo */
 /* telas apartir de 768 */
 
-@media (min-width: 768px){
-      #header {
-        background-color: var(--fundo-header);
+@media (min-width: 768px) {
+    #header {
+        background-color: var(--bg);
         position: fixed;
-        border-bottom: 2px solid white;
-      }
+        border-bottom: 1px solid #989898;
+        padding: 16px 96px;
+    }
+        
       .header-nav{
           display:flex;
 
-    }
+      }
       .header-nav,
       .header-toggle{
         min-width: 30%;
@@ -310,6 +396,13 @@ height:auto;/* altura */
        }
 
 }
+
+    /*fim do 768 */
+@media (min-width:992px) {
+    .projetos-card{
+        flex-direction: row;
+    }
+}
 /* 1200px */
 
 @media (min-width: 1200px) {
@@ -317,3 +410,36 @@ height:auto;/* altura */
         padding: 160px 96px 32px ;
    }
 }
+
+    h1 {
+        font-size: 80px;
+}
+
+    h2 {
+       font-size: 65px;
+}
+
+    p, span, li {
+    font-size: 20px;
+} 
+/* fim do 1200px */ 
+
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 70px;
+    }
+    .projetos {
+        padding: 160px 240px 64px;
+    }
+} 
+
+
+
+
+
+
+
