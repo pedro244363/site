@@ -165,13 +165,13 @@ height:auto;/* altura */
 
 /*menu desktop*/
 
-.menu{
-    display:flex ;
-    align-items: center ;
-    gap:25px ;
-
-
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
+
+
 
 
 .menu-item{
@@ -197,7 +197,7 @@ height:auto;/* altura */
     display: none;
 }
 
-.menu-mobile    .menu-link{
+.menu-mobile .menu-link{
         flex-direction: column;
         justify-content: center;
         align-items:center;
@@ -327,7 +327,7 @@ height:auto;/* altura */
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
-    box-shadow: 0 10px 70px burlywood;
+    box-shadow: 0 10px 70px var(--sombra);
 }
 
 .card-description {
@@ -350,6 +350,7 @@ height:auto;/* altura */
     margin-bottom: 10px;
     font-family: "Georama", sans-serif;
 }
+
 
 
 /* ATUALIZAÇOES FUTURAS*/
@@ -398,11 +399,19 @@ height:auto;/* altura */
 }
 
     /*fim do 768 */
+
 @media (min-width:992px) {
     .projetos-card{
         flex-direction: row;
     }
 }
+.card-reverse.card-body{
+    display: flex;
+    justify-content: column;
+    flex-direction: flex-end;
+    text-align: right;
+}
+    
 /* 1200px */
 
 @media (min-width: 1200px) {
@@ -437,9 +446,15 @@ height:auto;/* altura */
     }
 } 
 
+/* 0 até 992px */
 
-
-
-
+@media (max-width:992px) {
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+    }
+}
 
 
