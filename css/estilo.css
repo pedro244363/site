@@ -158,7 +158,7 @@ height:auto;/* altura */
     color: whitesmoke;/* cor texto */
     font-size: 33px; /* tamanho da fonte: 16 pra 45 */
     cursor: pointer ;
-    transition: all 0.6 ease-in-out ;
+    transition: all 0.9 ease-in-out ;
 
 
 }
@@ -284,7 +284,7 @@ height:auto;/* altura */
 }
 .btn:hover {
     transform: scale(1.05);
-    transition: all ease-in-out .4s;
+    transition: all ease-in-out 0.9s;
 }
 
 .btn:hover span,
@@ -357,8 +357,58 @@ height:auto;/* altura */
 #home{
     padding: 40px 16px;
 }
+ 
+/* Sobre */
 
+ .sobre {
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+ }
+ 
+ .sobre-perfil {
+     width: 100%;
+     pointer-events: none;
+     border-radius: 50%;
+     border: 8px solid #cacaca;
+ }
+ 
+ .sobre-content1,
+ .sobre-content2 {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 32px;
+     margin-bottom: 80px;
+ }
 
+ .sobre-icones{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .sobre-skills i,
+ .sobre-icones i {
+    font-size: 20px;
+    color: white;
+ }
+
+ .sobre-content1 .col1 ,
+ .sobre-content2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 32px;
+ }
+
+ .sobre-content2 .col1 .row1 ,
+ .sobre-content2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ 
 
 
 
@@ -455,6 +505,21 @@ height:auto;/* altura */
         justify-content: center;
         align-items: right;
     }
+
+.card-img {
+    width: 55%;
 }
 
+.sobre {
+    gap:10px ;
+}
 
+.sobre-content1,
+.sobre-content2 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+}
