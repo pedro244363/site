@@ -1,21 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
 
 <head>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Gustavo</title>
+    <title> Portfolio | Pedro </title>
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
-    <!--css-->
+    <!-- Link com o CSS -->
     <link rel="stylesheet" href="css/estilo.css">
 
-    <!--link com o CSS -->
-    <link rel="stylesheet" href="css/stylefavicon.ico" type="image/x-icon">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -25,17 +29,17 @@
 
         <!-- menu desktop -->
         <nav class="header-nav">
-            <ul class="menu  menu-principal">
+            <ul class="menu menu-principal">
+
                 <li class="menu-item">
                     <a href="#home" class="menu-link active">
                         <span class="menu-texto"> home </span>
                     </a>
-
                 </li>
 
                 <li class="menu-item">
-                    <a href="#cardápio" class="menu-link">
-                        <span class="menu-texto"> cardápio</span>
+                    <a href="#projetos" class="menu-link">
+                        <span class="menu-texto"> cardápio </span>
                     </a>
                 </li>
 
@@ -47,47 +51,42 @@
 
                 <li class="menu-item">
                     <a href="#contato" class="menu-link">
-                        <span class="menu-texto"> contato</span>
-
+                        <span class="menu-texto"> contato </span>
                     </a>
-                </li class="menu-item">
+                </li>
+
             </ul>
         </nav> <!-- Fim Menu desktop -->
 
         <!-- Logo -->
-        <div data-aos="zoom-ind">
+        <div data-aos="zoom-in">
             <a href="#home">
-                <img src="img/logo.png  " alt="" class="logo">
+                <img src="img/logo.png" alt="" class="logo">
             </a>
         </div>
 
         <!-- Trocar cor Tema -->
         <div class="header-toggle">
             <i class="bi bi-sun" id="toggleTheme"></i>
-
         </div>
 
     </header>
-    <!-- Indentação Shift + Alt + F -->
-    <!-- comentário Shift + Alt + A -->
 
-
-
-    <!-- MENU MOBILE -->
+    <!-- Menu Mobile -->
     <nav class="nav-mobile">
         <ul class="menu menu-mobile">
+
             <li class="menu-item">
                 <a href="#home" class="menu-link active">
                     <i class="icone-link bi bi-house"></i>
                     <span class="menu-texto"> home </span>
                 </a>
-
             </li>
 
             <li class="menu-item">
-                <a href="#cardápio" class="menu-link">
+                <a href="#projetos" class="menu-link">
                     <i class="icone-link bi bi-images"></i>
-                    <span class="menu-texto"> cardápio</span>
+                    <span class="menu-texto"> cardápio </span>
                 </a>
             </li>
 
@@ -101,111 +100,103 @@
             <li class="menu-item">
                 <a href="#contato" class="menu-link">
                     <i class="icone-link bi bi-envelope"></i>
-                    <span class="menu-texto"> contato</span>
+                    <span class="menu-texto"> contato </span>
+                </a>
+            </li>
 
         </ul>
+
     </nav>
 
     <main id="home">
 
-        <div class="main-content" data-aos="zoom-in" data-aos-delay="600">
+        <div class="main-content">
 
-            <h1> <strong data-aos="zoom-in" data-aos-delay="900">
-                    O app de fast-food que entrega seu alimento em menos de "25 minutos"!!!
-                    <srong>
-
+            <h1 data-aos="zoom-in" data-aos-delay="1000">
+                <strong>
+                    Soluções Digitais &
+                </strong>
+                Desenvolvimento Front-End.
             </h1>
 
+            <p data-aos="fade-right" data-aos-delay="3000"> Pedro Arthur - SP , Desenvolvedor junior   .
+            </p>
+
             <ul class="menu menu-social">
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-instagram"></i>
+                    </a>
+                </li>
 
-                <a href="https://www.instagram.com/pedrosxlza_/" target="_blank">
-                    <i class="icon-social bi bi-instagram"></i>
-                </a>
-
-                <a href="https://github.com/pedro244363" target="_blank">
-                    <i class="icon-social bi bi-github"></i>
-
-                </a>
-
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon-social bi bi-linkedin"></i>
+                    </a>
+                </li>
             </ul>
 
+
             <a href="#projetos">
-
                 <button class="btn btn-primary">
-                    <span> VER CARDÁPIO</span>
-                    <i class="icon-socialbi bi-arrow-up"></i>
+                    <span> Ver cardápio </span>
+                    <i class="bi bi-arrow-down-right"></i>
                 </button>
-
             </a>
 
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/KnhtAU0b6oo"
-                    title="Vídeo Institucional para Hamburgueria - New York Burger (Food Film Burger - B ROLL)"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+        </div> <!-- Fim main content -->
+        <div class="video">
 
-            </div>
-        </div><!--fim main content-->
+            <iframe width="1310" height="737" src="https://www.youtube.com/embed/IS1XHAJVURI" 
+            title="Comercial incrível de hambúrguer artesanal" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+        </div>
 
     </main>
 
     <!-- Projetos -->
     <section id="projetos" class="projetos">
 
-        <h2>especificaçoes</h2>
-        <h3> Corintios 10:31 </h3>
+        <h2>Cardápio</h2>
 
         <div class="projetos-container">
 
             <!-- Projeto 1 -->
             <article class="projeto-card">
 
-                <img src="img/hambúrguer.jpg" alt="" class="card-img">
+                <img src="img/hambúrquer.jpg" alt="" class="card-img">
 
                 <div class="card-body">
 
-                    <h3 class="card-title"> Tipos de hambúrguers :</h3>
+                    <h3 class="card-title">Games Store</h3>
                     <p class="card-description">
-                        hambúrguers:
+                        Venda de Games Digitais
                     </p>
 
                     <ul class="card-lista">
 
                         <li class="card-item">
                             <i class="icon-list bi bi-chevron-double-right"></i>
-                            X-salada
+                            Jogos para PC
                         </li>
 
                         <li class="card-item">
                             <i class="icon-list bi bi-chevron-double-right"></i>
-                            X-bacon
+                            Jogos para Mac
                         </li>
 
                         <li class="card-item">
                             <i class="icon-list bi bi-chevron-double-right"></i>
-                            X-egg
+                            Jogos Mobile
                         </li>
-
-                        <li class="card-item">
-                            <i class="icon-list bi bi-chevron-double-right"></i>
-                            X-basic
-                        </li>
-
-                        <li class="card-item">
-                            <i class="icon-list bi bi-chevron-double-right"></i>
-                            X-All
-                        </li>
-
-                        <li class="card-item">
-                            <i class="icon-list bi bi-chevron-double-right"></i>
-                            X-Full All
-                        </li>
-
-
 
 
 
@@ -216,56 +207,85 @@
 
             </article>
 
-            <!--projeto 2-->
 
+            <!-- Projeto 2 -->
             <article class="projeto-card card-reverse">
 
-                <img src="img/carnes de corte nobre.jpg" alt="" class="card-img">
+                <img src="img/josisbox.jpg" alt="" class="card-img">
 
                 <div class="card-body">
 
-                    <h3 class="card-title"> Tipos de corte de carne :</h3>
+                    <h3 class="card-title">Josis Box</h3>
                     <p class="card-description">
-                        Carnes:
+                        Venda de Livros Online
+                    </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            Tecnologia
+                            <i class="icon-list bi bi-chevron-double-left"></i>
+                        </li>
+
+                        <li class="card-item">
+                            Literatura
+                            <i class="icon-list bi bi-chevron-double-left"></i>
+                        </li>
+
+                        <li class="card-item">
+                            Romance
+                            <i class="icon-list bi bi-chevron-double-left"></i>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </article>
+
+
+            <!-- Projeto 3 -->
+            <article class="projeto-card">
+
+                <img src="img/portfolio.PNG" alt="" class="card-img">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Dev Feriani</h3>
+                    <p class="card-description">
+                        Portfolio Digital
                     </p>
 
                     <ul class="card-lista">
 
                         <li class="card-item">
                             <i class="icon-list bi bi-chevron-double-right"></i>
-                            Wagyu
+                            Projetos 1
                         </li>
 
                         <li class="card-item">
                             <i class="icon-list bi bi-chevron-double-right"></i>
-                            Patinho
+                            Projetos 2
                         </li>
 
                         <li class="card-item">
                             <i class="icon-list bi bi-chevron-double-right"></i>
-                            Filé mignon
+                            Projetos 3
                         </li>
 
-                        <li class="card-item">
-                            <i class="icon-list bi bi-chevron-double-right"></i>
-                            Picanha
-                        </li>
 
-                        <li class="card-item">
-                            <i class="icon-list bi bi-chevron-double-right"></i>
-                            Alcatra
-                        </li>
 
-                        <li class="card-item">
-                            <i class="icon-list bi bi-chevron-double-right"></i>
-                            Coxão duro
-                        </li>
-
+                    </ul>
 
                 </div>
 
+
             </article>
 
+
+
+        </div>
 
     </section>
 
@@ -273,52 +293,61 @@
 
         <article class="sobre-content1">
 
-            <img src="img/imagem  sobre mim.jfif" alt="" class="sobre-perfil">
+            <img src="img/avatar.jpg" alt="" class="sobre-perfil">
 
-            <div class="sobre-descrição">
-                <h2> Sobre mim </h2>
-
+            <div class="sobre-descricao">
+                <h2> Sobre </h2>
                 <p>
-                    Pedro Arthur , adorador da tecnologia , games e PC , meu primeiro
-                    "hello world" foi quando eu entrei em contato pela primeira vez com a programação
-                    a 1 ano atrás quando fiz meu primerio curso , programação em python , no SENAI , apartir dai nunca
-                    nunca mais parei e pretendo fazer ainda mais curso pra me aperfeiçoar em tecnologia e programação e
-                    seguir com esta carreira que no momento esta sendo muito procurada.
+                    Gustavo Feriani. Entusiasta por tecnologia, Games e PC, meu primeiro "Hello World" foi na
+                    pré-adolescência quanto tive contato com HTML em Tabelas e aqueles websites esquisitos feitos em
+                    Flash 😅. Atualmente curso especiliazação em IA e Machine Learning e atuo como instrutor no Senai
+                    SP.
                 </p>
+
                 <div class="sobre-skills">
-                    <i class="bi bi-translate"></i>
-                    <span> Ingles intermediário</span>
+                    <i class="bi bi-translate"> </i>
+                    <span> Inglês: Intermediário </span>
                 </div>
 
-                <div class="descrição-button">
+                <div class="descricao-button">
                     <a href="/" target="_blank">
                         <button class="btn btn-primary">
-                            <span> Conecte-se Comigo </span>
+                            <span> Conecte-se Comigo. </span>
                             <i class="bi bi-arrow-up-right"></i>
-
                         </button>
                     </a>
                 </div>
             </div>
-
         </article>
-
 
         <article class="sobre-content2">
 
             <div class="col1">
 
                 <div class="row1">
-                    <h3>conhecimentos</h3>
+                    <h3>Formação</h3>
 
                     <!-- Formação 1 -->
-                    <i class="bi bi-bank"> </i>
-                    <span> Curso excel basic </span>
-                    <h4> 2023 - 2024 </h4>
+                    <h4> Inteligência Articial </h4>
+                    <span> 2024 - 2025 </span>
 
                     <div class="sobre-icones">
                         <i class="bi bi-bank"> </i>
-                        <span> SENAI programação em Python</span>
+                        <span> Cruzeiro do Sul </span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Pós Gradução </span>
+                    </div>
+
+                    <!-- Formação 2 -->
+                    <h4> Sistemas para Internet </h4>
+                    <span> 2020 - 2022 </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span> FAM </span>
                     </div>
 
                     <div class="sobre-icones">
@@ -332,6 +361,22 @@
                 <div class="row2">
                     <h3>Experiências</h3>
 
+                    <!-- Cargo // Cliente  -->
+                    <h4>Instrutor</h4>
+
+                    <span>Senai. 2012 - Atualmente</span>
+                    
+                    <span>Instrutor de Cursos.</span>
+
+                    <ul class="sobre-lista">
+                        <li class="sobre-item">Aulas Presenciais.</li>
+                        <li class="sobre-item">Aulas EAD.</li>
+                        <li class="sobre-item">Aulas EAD.</li>
+                        <li class="sobre-item">Aulas EAD.</li>
+                        <li class="sobre-item">Aulas EAD.</li>
+                        <li class="sobre-item">Aulas EAD.</li>
+                    </ul>
+
                 </div>
 
             </div>
@@ -343,27 +388,138 @@
                 <div class="accordion">
 
                     <!-- Curso 1 -->
-                    <div class="accortion-item">
+                    <div class="accordion-item active">
+                        
+                        <button class="accordion-header start">
+                            <span>Machine Learning</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
 
-                    </div> 
-                </div>        
+                        <div class="accordion-body">
+                            <p>Instituição - 60H</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+
+                    </div> <!-- fim Curso 1 -->
+
+                    <!-- Curso 2 -->
+                    <div class="accordion-item active">
+                        
+                        <button class="accordion-header ">
+                            <span>Google Cloud Engineer</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <div class="accordion-body">
+                            <p>Instituição - 60H</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+
+                    </div> <!-- fim Curso 1 -->
+
+                    <!-- Curso 3 -->
+                    <div class="accordion-item">
+
+                        <button class="accordion-header end">
+                            <span>Google Cloud Foundations</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <div class="accordion-body end">
+                            <p>Instituição - 60H</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- Fim Accordion -->
+
+
             </div>
 
         </article>
 
     </section>
 
+    <section id="contato" class="contato">
+         <h2>Contato</h2>
+
+         <p>
+            Estou disponivel para orientaçoes e novas conexões.
+            contate-me via e-mail e conecte-se comigo através das minhas
+            redes sociais
+         </p>
+
+         <ul class="menu menu-social">
+
+            <li>
+
+            <a href="https://github.com/pedro244363"
+            class="menu-link" target="_blank">
+            <i class="icon-social bi-github"></i>
+            <span>Github</span>
+            </a>
+
+        </li>
+
+        
+        
+        <li>
+
+            <a href="#"
+            class="menu-link" target="_blank">
+            <i class="icon-social bi-instagram"></i>
+            <span>Instagram</span>
+            </a>
+
+        </li>
+        
+        
+        <li>
+
+            <a href="https://wa.me/+5511997498152" class="menu-link"
+            class="menu-link" target="_blank">
+            <i class="icon-social bi-whatsapp"></i>
+            <span>Whatsapp</span>
+            </a>
+
+        </li>
+
+         </ul>
+
+         <a href="mailto:pedroarthur.silvs2007@gmail.com">
+            <button class="btn btn-primary">
+                <i class="icon-social bi bi-envelope-fill"></i>
+                <span class="email">
+                    Meu e-mail pra contato
+                </span>
+            </button>
+         </a>
+
+    </section>
+
+  <!---Roda pé--->
+    <footer>
+        <p>
+           &copy; Pedro arthur.todos os direitos
+           reservados.
+           <a href="https://github.com/pedro 244363" target="_blank">
+                  WORKFAST
+           </a>
+        </p>   
+    </footer>
 
 
     <!-- AOS JS -->
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/script.js"> </script>
 
     <script>
         AOS.init({
-            duration: 600,
+            duration: 900,
         });
     </script>
 
