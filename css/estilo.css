@@ -358,7 +358,8 @@ strong {
 /* ATUALIZAÇÕES FUTURAS */
 #home,
 .projetos,
-.sobre {
+.sobre, 
+.contato {
     padding: 40px 16px;
 }
 
@@ -471,6 +472,25 @@ strong {
     display: flex;
 }
 
+/* contato*/
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-top: 1px  solid  var(--color);
+    border-bottom: 1px  solid  var(--color) ;
+}
+
+.contato p {
+    text-align: justify;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 0 140px;
+}
+
   /*roda pé*/
 
   
@@ -486,16 +506,14 @@ footer p {
 }
 
 footer a {
-    color:green;
+    color:rgb(255, 255, 255);
 }
 
 footer i:hover,
 footer a:hover{
-    color: yellow;
-    transition: ease-in-out .3s;
+    color: rgb(122, 122, 122);
+    transition: ease-in-out .2s;
 }
-
-
 
 
 
