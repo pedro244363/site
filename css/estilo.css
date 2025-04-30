@@ -491,6 +491,46 @@ strong {
     padding: 0 140px;
 }
 
+  /*Form*/
+
+  .form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    max-width: 500px;
+    background: var(--bg);
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 1px 5px 20px var(--sombra);
+  }
+
+  .form-contato label {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: var(--bg);
+  }
+
+  .form-contato input:focus,
+  .form-contato textarea:focus {
+    border-color: var(--bg);
+    box-shadow: 0 0 5px #7c7c7c;
+  }
+  .form-contato textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
   /*roda pé*/
 
   

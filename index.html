@@ -269,6 +269,12 @@
                             <i class="icon-list bi bi-chevron-double-left"></i>
                         </li>
 
+                        <li class="card-item">
+                            Entre outros ...
+                            <i class="icon-list bi bi-chevron-double-left"></i>
+                        </li>
+
+
                     </ul>
 
                 </div>
@@ -510,15 +516,39 @@
         abaixo
     </p>
 
-    <form action="https://formspree.io/f/xeogoanz" method="post">
-        <label for="nome" class="" id="">
-            NOME*
+    <form action="https://formspree.io/f/xeogoanz" method="post" class="form-contato">
+        
+        <label for="nome" class="name-label" id="name-label">
+            
+            Nome *
+
         </label>
 
-        <input type="text" placeholder="Digite seu nome" name="Nome" 
-        id=""class="" required>
+        <input type="text" placeholder="Digite seu Nome " name="Nome" 
+        id="nome" class="name-input" required>
 
-        <button type="submit">
+        <label for="email" class="email-label" id="email">
+            
+            E-mail *
+
+        </label>
+
+        <input type="email" class="email-input" id="email"
+        name="email" placeholder="Digite seu E-mail" required>
+
+    </label>
+
+        <label for="mensagem" id="mensagem" class="label-mensagem" >
+
+            Mensagem * 
+
+        </label>
+
+        <textarea name="mensagem" id="mensagem" class="input-mensagem" 
+        placeholder="Digite sua mensagem" required>
+        </textarea>
+
+        <button type="submit" class="btn btn-primary">
             Enviar
         </button>
 
